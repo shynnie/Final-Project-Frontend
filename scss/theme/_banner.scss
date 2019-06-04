@@ -1,0 +1,87 @@
+/* banner area css
+============================================================================================ */
+.banner-area {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding-top: 130px;
+	margin-bottom: 100px;
+	position: relative;
+	height: 700px;
+	text-align: center;
+	
+	&::before {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		content: "";
+		background: #000;
+		opacity: .5;
+	}
+	@media (max-width: 991px) {
+		padding-top: 80px;
+		height: 523px;
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+	}
+	@media (max-width: 767px) {
+		background-size: cover;
+		background-position: center center;
+		background-repeat: no-repeat;
+		height: 605px;
+	}
+}
+.banner-details {
+	padding: 100px 0 100px 0;	
+	&::before {
+		background: black;
+	}
+	h1 {
+		font-size: 80px;
+		padding: 20px 0;
+		margin: 190px 0;
+		text-align: center;
+		color: white;
+		display: inline-block;
+		border-bottom: 1px solid #fff;
+		position: relative;
+		@media (max-width: 991px) {
+			font-size: 60px;
+			padding: 20px 0;
+			margin: 100px 0;
+		}
+		@media (max-width: 767px) {
+			font-size: 80px;
+			padding: 20px 0;
+			margin: 100px 0;
+		}
+	}
+	span {
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		display: block;
+		&:before {
+			content: "";
+			left: 0;
+			position: absolute;
+			width: 50%;
+			display: block;
+			background: #fff;
+			height: 1px;
+		}
+		&:after {
+			content: "";
+			right: 0;
+			position: absolute;
+			width: 50%;
+			display: block;
+			background: #fff;
+			height: 1px;
+		}
+	}
+}

@@ -1,0 +1,133 @@
+//--------- Start Filter Bar -----------//
+.filter-bar {
+	padding: 0px 20px 10px 20px;
+	background: $primary-color3;
+		
+	a,i{
+		color:$black;
+	}	
+}
+
+.main-categories{
+	a{
+	color:$black;
+	}
+}
+
+.grid-btn, .list-btn {
+	margin-top: 10px;
+	width: 40px;
+	line-height: 40px;
+	border: 1px solid #eee;
+	text-align: center;
+	i {
+		display: inline-block;
+	}
+	&:hover {
+		@extend .gradient-bg;
+		i {
+			color: $white;
+		}
+	}
+	&.active {
+		@extend .gradient-bg;
+		i {
+			color: $white;
+		}
+	}
+	margin-right: 10px;
+}
+.sorting {
+	margin-top: 10px;
+	margin-right: 10px;
+	.nice-select {
+		border-radius: 0px;
+		border: 1px solid #eee;
+		padding-right: 50px;
+		&:after {
+			right: 18px;
+		}
+		.list {
+			border-radius: 0px;
+		}
+	}
+}
+.pagination {
+	margin-top: 10px;
+	border-left: 1px solid #eee;
+	border-radius: 0px;
+	a {
+		width: 40px;
+		line-height: 40px;
+		text-align: center;
+		display: inline-block;
+		background: $white;
+		&.active {
+			@extend .gradient-bg;
+			color: $white;	
+		}
+		&:hover {
+			@extend .gradient-bg;
+			color: $white;	
+		}
+	}
+	.dot-dot {
+		width: auto;
+		background: transparent;
+		border-top: 0px;
+		border-bottom: 0px;
+		color: #cccccc;
+		padding: 0 5px;
+		&:hover {
+			background: transparent;
+			border: 0px;
+			border-right: 1px solid #eee;
+			color: #cccccc;
+		}
+	}
+}
+
+//--------- End Filter Bar -----------//
+
+//--------- Start Sidebar Category Dropdown ---------//
+.sidebar-categories {
+	.head {
+		line-height: 60px;
+		background: $primary-color3;;
+		padding: 0 30px;
+		font-size: 16px;
+		font-weight: 400;
+		color: #fff;
+	}
+	.main-categories {
+		padding: 0 20px;
+		background: $white;
+		box-shadow: 0 10px 10px rgba(153, 153, 153, 0.1);
+	}
+	.main-nav-list {
+		a {
+			font-size:14px;
+			display: block;
+			line-height: 50px;
+			padding-left: 10px;
+			border-bottom: 1px solid #eee;
+			&:hover {
+				color: $primary-color;
+			}
+			.number {
+				color: #cccccc;
+				margin-left: 10px;
+			}
+			.lnr {
+				margin-right: 10px;
+				display: none;
+			}
+		}
+		&.child {
+			a {
+				padding-left: 32px;
+			}
+		}
+	}
+}
+//--------- End Sidebar Category Dropdown ---------//
