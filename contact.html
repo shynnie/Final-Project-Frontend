@@ -6,8 +6,8 @@
     <title> Biker.vn - For Biker Lover </title>
 
 	<!-- CSS -->
-  <link rel="stylesheet" href="css/bootstrap.css">	
-  <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">	
+    <link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/commerce.css">
 	<link rel="stylesheet" href="css/linearicons.css">
 	<link rel="stylesheet" href="css/nice-select.css">
@@ -34,11 +34,12 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-								<li class="nav-item"><a class="nav-link" href="category.html">Category</a></li>
-								<li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
-								<li class="nav-item"><a class="nav-link" href="blog.html">What's New</a></li>
-								<li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+            				<li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="home.html">Category</a></li>
+							<li class="nav-item"><a class="nav-link" href="home.html">Cart</a></li>
+							<li class="nav-item"><a class="nav-link" href="home.html">What's New</a></li>
+							<li class="nav-item"><a class="nav-link" href="home.html">FAQ</a></li>
+
 						</ul>
 						<ul class="nav navbar-nav navbar-right">
 							<li class="nav-item">
@@ -62,96 +63,73 @@
 	<!-- End Header Area -->
 
 	<!-- Start Banner Area -->
-	<section class="banner-area" style="background-image: url(img/banner/banner3.jpg)">
+	<section class="banner-area" style="background-image: url(img/banner/banner2.jpg)">
 		<div class="container">
 			<div class="banner-details d-flex flex-wrap align-items-center justify-content-center">
 				<div class="col-first">
-					<h1><span></span>Confirmation</h1>
+					<h1><span></span>Contact</h1>
 				</div>
 			</div>
 		</div>
 	</section>
 	<!-- End Banner Area -->
 
-    <!-- Start Order Details Area -->
-    <section class="order_details section_gap">
-        <div class="container">
-            <h3 class="title_confirmation">Thank you. Your order has been received</h3>
-			<div class="row order_details_inner">
-				<div class="col-lg-6">
-					<div class="item_details">
-						<h4>Order Info</h4>
-						<ul class="list">
-							<li><span>Order number</span></li>
-							<li><span>Date</span></li>
-							<li><span>Total</span></li>
-						</ul>
+    <!--================Contact Area =================-->
+	<section class="contact_area section_gap_bottom">
+		<div class="container">
+			<div id="mapBox" class="mapBox" data-lat="40.701083" data-lon="-74.1522848" data-zoom="13" data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
+			 data-mlat="40.701083" data-mlon="-74.1522848">
+			 <img src="img/vnukcontact.JPG" style="height: 450px; margin-bottom: 100px;">
+			</div>
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="contact_info">
+						<div class="info_item">
+							<i class="lnr lnr-home"></i>
+							<h6>158A Le Loi, Da Nang, Viet Nam</h6>
+							<p>VNUK Uni</p>
+						</div>
+						<div class="info_item">
+							<i class="lnr lnr-phone-handset"></i>
+							<h6><a href="#">0 (123) 456 789</a></h6>
+							<p>Mon to Fri 9am to 6 pm</p>
+						</div>
+						<div class="info_item">
+							<i class="lnr lnr-envelope"></i>
+							<h6><a href="#">starcatcher@gmail.com</a></h6>
+							<p>Send us your query anytime!</p>
+						</div>
 					</div>
 				</div>
-				<div class="col-lg-6">
-					<div class="item_details">
-						<h4>Billing Address</h4>
-						<ul class="list">
-							<li><span>Street</span></li>
-							<li><span>City</span></li>
-							<li><span>Country</span></li>
-						</ul>
-					</div>
+				<div class="col-lg-9">
+					<form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Subject'">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<textarea class="form-control" name="message" id="message" rows="5" placeholder="Enter Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Message'"></textarea>
+							</div>
+						</div>
+						<div class="col-md-12 text-right">
+							<button type="submit" value="submit" class="primary-btn">Send Message</button>
+						</div>
+					</form>
 				</div>
 			</div>
-			<div class="order_details_table">
-				<h2>Order Details</h2>
-				<div class="table-responsive">
-					<table class="table">
-						<thead>
-							<tr>
-								<th scope="col">Product</th>
-								<th scope="col">Quantity</th>
-								<th scope="col">Total</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<p>Pixelstore fresh Blackberry</p>
-								</td>
-								<td>
-									<h5>x 02</h5>
-								</td>
-								<td>
-									<p>500.000</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<p>Pixelstore fresh Blackberry</p>
-								</td>
-								<td>
-									<h5>x 02</h5>
-								</td>
-								<td>
-									<p>500.000</p>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<h4>Total</h4>
-								</td>
-								<td>
-									<h5></h5>
-								</td>
-								<td>
-									<p>$2.000.000</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-        </div>
-    </section>
-    <!-- End Order Details Area -->
+		</div>
+	</section>
+	<!--================Contact Area =================-->
 
+	
 	<!-- Start footer Area -->
 	<footer class="footer-area section_gap">
 		<div class="container">
@@ -160,17 +138,17 @@
 					<div class="single-footer-widget">
 						<h4>Contact Us</h4>
 						<p>
-							<p> Make by Star Catchers with love <br></p>
-							<p>Address :158A Le Loi <br></p>
-							<p>Phone : 0123456789 <br></p>
-							<p>Email :Biker@gmail.com</p>
+							<h5> Make by Star Catchers with love <br></h5>
+							<h5>Address :158A Le Loi <br></h5>
+							<h5>Phone : 0123456789 <br></h5>
+							<h5>Email :Biker@gmail.com</h5>
 						</p>
 					</div>
 				</div>
 				<div class="col-lg-4  col-md-6 col-sm-6">
 					<div class="single-footer-widget">
 						<h4>Newsletter</h4>
-						<p>Stay update with our latest</p>
+						<h5>Stay update with our latest</h5>
 						<div class="" id="mc_embed_signup">
 
 							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
@@ -199,7 +177,8 @@
 						<div class="footer-social d-flex align-items-center">
 							<a href="#"><i class="fa fa-facebook"></i></a>
 							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a href="#"><i class="fa fa-dribbble"></i></a>
+							<a href="#"><i class="fa fa-behance"></i></a>
 						</div>
 					</div>
 				</div>
@@ -208,11 +187,7 @@
 	</footer>
 	<!-- End footer Area -->
 
-	
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
-
-
-
