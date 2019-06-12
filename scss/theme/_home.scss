@@ -75,96 +75,44 @@
 
 /* start product area css
 ============================================================================================ */
-.active-product-area {
-	padding-top: 70px;
-	padding-bottom: 50px;
-	.owl-nav {
-		div {
-			position: absolute;
-			left: 35%;
-			top: 7%;
-			opacity: .3;
-			@media (max-width: 1440px) {
-				left: 30%;
-			}
-			@media (max-width: 1200px) {
-				left: 28%;
-			}
-			@media (max-width: 991px) {
-				top: 3%;
-				left: 25%;
-			}
-			@media (max-width: 870px) {
-				left: 15%;
-			}
-			@media (max-width: 767px) {
-				left: 10%;
-				top: 2%;
-				margin-top: -25px;
-			}
-			@media (max-width: 570px) {
-				left: 37%;
-				top: 1%;
-				margin-top: -25px;
-			}
-			@media (max-width: 480px) {
-				margin-top: -20px;
-				left: 28%;
-			}
-			&:hover {
-				opacity: 1;
-			}
-		}
-		.owl-next {
-			left: auto;
-			right: 35%;
-			@media (max-width: 1440px) {
-				right: 30%;
-			}
-			@media (max-width: 1200px) {
-				right: 28%;
-			}
-			@media (max-width: 991px) {
-				top: 3%;
-				right: 25%;
-			}
-			@media (max-width: 870px) {
-				right: 15%;
-			}
-			@media (max-width: 767px) {
-				right: 10%;
-				top: 2%;
-				margin-top: -25px;
-			}
-			@media (max-width: 570px) {
-				right: 37%;
-				top: 1%;
-				margin-top: -25px;
-			}
-			@media (max-width: 480px) {
-				margin-top: -20px;
-				right: 28%;
-			}
-		}
-	}
-}
 .single-product {
+	margin-top: 50px;
 	margin-bottom: 50px;
 	img {
 		margin-bottom: 20px;
 		width: 100%;
+		padding: 10px;
+
+		
 	}
-	.product-details {
-		h6 {
-			font-size: 16px;
-			text-transform: uppercase;
-			&:hover {
-				a {
-					color: #ffba00;
-				}
+	
+	&:hover {
+		-webkit-box-shadow: 0px 6px 10px -6px rgba(0, 0, 0, 0.438);
+		box-shadow: 0px 6px 10px -6px rgba(0, 0, 0, 0.349);
+		-webkit-transform: translateY(-4px);
+		-ms-transform: translateY(-4px);
+		transform: translateY(-4px);
+		.product-details {
+			.prd-bottom {
+				opacity: 1;
+				visibility: visible;
 			}
 		}
+	}
+	.product-details {
+		padding: 15px;
+		h6 {
+			font-size: 16px;
+			text-align: center;
+
+			a {
+				color: #222222;
+			}
+			
+
+		}
 		.price {
+			text-align: center;
 			h6 {
 				font-size: 14px;
 				display: inline-block;
@@ -180,80 +128,32 @@
 		.prd-bottom {
 			position: relative;
 			margin-top: 20px;
-			background: #ffba00;
-			
-			border-radius: 3px;
-			color: $title-color;
-			width: 55%;
+			opacity: 0;
+			visibility: hidden;
+			text-align: center;
+			padding: 15px;
 			a {
-				font-size: 20px;
+				padding: 10px 20px;
 				text-align: center;
-			}
-			&:hover {
-					background: #ce7106
-			}
-			.social-info {
-				position: relative;
-				display: inline-block;
-				width: 35px;
-				@include transition();
-				overflow: hidden;
-				span {
-					position: relative;
-					height: 30px;
-					width: 30px;
-					line-height: 30px;
-					text-align: center;
-					background: #828bb2;
-					border-radius: 50%;
-					display: inline-block;
-					color: #fff;
-					@include transition();
-					z-index: 1;
-					&:after {
-						position: absolute;
-						left: 0;
-						top: 0;
-						height: 100%;
-						width: 100%;
-						content: "";
-						@extend .gradient-bg;
-						border-radius: 50%;
-						opacity: 0;
-						visibility: hidden;
-						z-index: -1;
-					}
-				}
-				.hover-text {
-					position: absolute;
-					left: 0;
-					top: 3px;
-					width: 100px;
-					left: -40px;
-					text-transform: uppercase;
-					font-family: $title-font;
-					font-weight: 500;
-					font-size: 12px;
-					color: $title-color;
-					@include transition();
-					opacity: 0;
-					visibility: hidden;
-				}
+				background: #f8694a;
+				color: #fff;
+				text-transform: uppercase;
+				font-weight: 700;
+				border: none;
+				transition: 0.3s all;
 				&:hover {
-					width: 115px;
-					span {
-						&:after {
-							opacity: 1;
-							visibility: visible;
-						}
-					}
-					.hover-text {
-						opacity: 1;
-						visibility: visible;
-						left: 40px;
-					}
+					content: "";
+					padding: 10px 20px;
+					text-align: center;
+					background: #30323a;
+					color: #fff;
+					text-transform: uppercase;
+					font-weight: 700;
+					border: none;
+					transition: 0.3s all;
+					
 				}
-			}
+			}			
 		}
 	}
 }
@@ -295,6 +195,11 @@
 				color: #ffba00;
 			}
 		}
+		-webkit-box-shadow: 0px 6px 10px -6px rgba(0, 0, 0, 0.438);
+		box-shadow: 0px 6px 10px -6px rgba(0, 0, 0, 0.349);
+		-webkit-transform: translateY(-4px);
+		-ms-transform: translateY(-4px);
+		transform: translateY(-4px);
 	}
 }
 @media (max-width: 991px) {

@@ -2,7 +2,8 @@
 .filter-bar {
 	padding: 0px 20px 10px 20px;
 	background: $primary-color3;
-		
+	position: -webkit-sticky;
+  	position: sticky;
 	a,i{
 		color:$black;
 	}	
@@ -97,7 +98,7 @@
 		padding: 0 30px;
 		font-size: 16px;
 		font-weight: 400;
-		color: #fff;
+		color: black;
 	}
 	.main-categories {
 		padding: 0 20px;
@@ -131,3 +132,19 @@
 	}
 }
 //--------- End Sidebar Category Dropdown ---------//
+
+//--------- Start Contact ---------//
+
+.get-in-touch-content {
+	text-align: center;
+	h1 {
+		margin: 15px;
+	}
+	p {
+		font-size: 20px;
+		margin-bottom: 50px;
+	}
+}
+
+//--------- End Contact ---------//
+
