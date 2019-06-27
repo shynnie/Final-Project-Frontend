@@ -966,14 +966,14 @@
   .single-product .product-details {
     padding: 15px; }
     .single-product .product-details h6 {
-      font-size: 16px;
-      text-align: center; }
+      font-size: 16px; }
       .single-product .product-details h6 a {
         color: #222222; }
     .single-product .product-details .price {
-      text-align: center; }
-      .single-product .product-details .price h6 {
-        font-size: 14px;
+      display: inline-block;
+      margin: 0 0 10px; }
+      .single-product .product-details .price h3 {
+        font-size: 22px;
         display: inline-block;
         padding-right: 15px;
         margin: 0; }
@@ -981,6 +981,11 @@
         text-decoration: line-through;
         color: #cccccc;
         margin-bottom: 0; }
+    .single-product .product-details .rating {
+      display: inline-block;
+      float: right; }
+      .single-product .product-details .rating i {
+        color: #ffb656; }
     .single-product .product-details .prd-bottom {
       position: relative;
       margin-top: 20px;

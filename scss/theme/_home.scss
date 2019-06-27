@@ -103,7 +103,6 @@
 		padding: 15px;
 		h6 {
 			font-size: 16px;
-			text-align: center;
 
 			a {
 				color: #222222;
@@ -112,9 +111,10 @@
 
 		}
 		.price {
-			text-align: center;
-			h6 {
-				font-size: 14px;
+			display: inline-block;
+			margin: 0 0 10px;
+			h3 {
+				font-size: 22px;
 				display: inline-block;
 				padding-right: 15px;
 				margin: 0;
@@ -123,6 +123,13 @@
 				text-decoration: line-through;
 				color: #cccccc;
 				margin-bottom: 0;
+			}
+		}
+		.rating {
+			display: inline-block;
+			float: right;
+			i {
+				color: #ffb656;
 			}
 		}
 		.prd-bottom {
