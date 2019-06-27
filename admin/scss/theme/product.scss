@@ -1,0 +1,75 @@
+// Start Card Area
+
+.cart_inner {
+    .table {
+        thead {
+            tr {
+                th {
+                    border-bottom: none;
+                    border-top: 0px;
+                    font-weight: 500;
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    vertical-align: middle;
+                    align-self: center;
+                    .media {
+                        .d-flex {
+                            padding-right: 30px;
+                            img {
+                                height: 150px;
+                            }
+                        }
+                        .media-body {
+                            vertical-align: middle;
+                            align-self: center;
+                            p {
+                                margin-bottom: 0px;
+                            }
+                        }
+                    }
+                    p {
+                        display: inline-block;
+                        background: #fff;
+                        border: 1px solid #eee;
+                        padding: 10px;
+                        margin: 5px;
+                    }
+                    h5 {
+                        font-size: 14px;
+                        margin-bottom: 0px;
+                    }            
+                    .product_count {
+                        margin-bottom: 0px;
+                        input {
+                            width: 100px;
+                            height: 40px;
+                            padding-left: 30px;
+
+                        }
+                    }        
+                }
+                button {
+                    background-color: #f8f9fa;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.gray_btn {
+    line-height: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0px 40px;
+    background: #e8f0f2;
+}
+
+// End Card Area
