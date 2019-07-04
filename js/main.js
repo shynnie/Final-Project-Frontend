@@ -9,35 +9,6 @@
 // 1. Local storage
 // 10. Search toggle
 
-///////////////////
-
-// For blog page test only
-
-///////////////////
-    // var myJson = '{"menu1":"home.html","menu2":"category.html","menu3":"blog.html","menu4":"contact.html"}';
-    // var myObj = JSON.parse(myJson);
-    // // document.getElementById("menu_item_1").textContent = "home";
-    // // document.getElementById("menu_item_1").setAttribute("href", myObj.menu1);
-    // document.getElementById("menu_item_2").textContent = "category";
-    // document.getElementById("menu_item_2").setAttribute("href", myObj.menu2);
-    // document.getElementById("menu_item_3").textContent = "blog";
-    // document.getElementById("menu_item_3").setAttribute("href", myObj.menu3);
-    // document.getElementById("menu_item_4").textContent = "contact";
-    // document.getElementById("menu_item_4").setAttribute("href", myObj.menu4);
-
-    // var myJson2 = {menu1:"home.html", menu2:"category.html", menu3:"blog.html", menu4:"contact.html"};
-
-    // var myStorage = JSON.stringify(myJson2);
-    // localStorage.setItem('testJSON', myStorage);
-
-    // text = localStorage.getItem('testJSON');
-    // obj = JSON.parse(text);
-    // document.getElementById("menu_item_1").textContent = "home";
-    // document.getElementById("menu_item_1").setAttribute('href', obj.menu1);
-
-//////////////////
-
-
 
 
 // 10. Search toggle
@@ -104,10 +75,16 @@ $(document).ready(function(){
     var count = 0;
     
     // change checkout_items
-
+    var checkoutItems = localStorage.getItem('checkout_items', '0');
     $('.prd-bottom').click(() => {
         count += 1;
         $('#checkout_items').text(count);
+        checkoutItems = localStorage.setItem('checkout_items', count);
+        alert(count.toString());
+        // for (var index = 0; index < count; index++) {
+        //     addToCart();
+        // }
+        
     });
     
 });
